@@ -6,151 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/rndphp/styles/styles.css">
     <style>
-        .slide {
-            padding: 40px var(--slide-side) 0;
-            padding-left: 50px;
-            padding-right: 70px;
-        }
+		.slide {
+			padding: 40px var(--slide-side) 0;
+			padding-left: 50px;
+			padding-right: 70px;
+		}
 
-        .slide ol, .slide ul {
-            padding-left: 30px;
-        }
+		.slide ol, .slide ul {
+			padding-left: 30px;
+		}
 
-        .shower {
-            --slide-ratio: calc(16 / 9);
-            font: 26px/2 'PT Sans', sans-serif;
-        }
+		.shower {
+			--slide-ratio: calc(16 / 9);
+			font: 26px/2 'PT Sans', sans-serif;
+		}
 
-        .progress::before {
-            background-color: #3db4dc;
-        }
+		.progress::before {
+			background-color: #3db4dc;
+		}
 
-        .shower h2 {
-            font-size: 40px;
-        }
+		.shower h2 {
+			font-size: 40px;
+		}
 
-        .shower h2::after {
-            content: "";
-            height: 10px;
-            display: block;
-            border-bottom: 4px solid #ffe54fff;
-            max-width: 30%;
-        }
+		.shower h2::after {
+			content: "";
+			height: 10px;
+			display: block;
+			border-bottom: 4px solid #ffe54fff;
+			max-width: 30%;
+		}
 
-        .slide::after {
-            bottom: -50px;
-            right: -80px;
-            top: auto;
-            left: auto;
-            background-image: url(pictures/bottom.png);
-            padding-top: 0;
-            width: 170px;
-            height: 130px;
-            padding-right: 120px;
-        }
+		.slide::after {
+			bottom: -50px;
+			right: -80px;
+			top: auto;
+			left: auto;
+			background-image: url(pictures/bottom.png);
+			padding-top: 0;
+			width: 170px;
+			height: 130px;
+			padding-right: 120px;
+		}
 
-        .slide::before {
-            content: "";
-            position: absolute;
-            display: block;
-            top: 45px;
-            right: 25px;
-            box-sizing: border-box;
-            padding-top: 15px;
-            text-align: center;
-            background-image: url(pictures/image4.png);
-            width: 120px;
-            height: 120px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
+		.slide::before {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 45px;
+			right: 25px;
+			box-sizing: border-box;
+			padding-top: 15px;
+			text-align: center;
+			background-image: url(pictures/image4.png);
+			width: 120px;
+			height: 120px;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
 
-        .slide pre {
-            white-space: pre;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
+		.slide pre {
+			white-space: pre;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 
-        .slide .cover {
-            width: 100%;
-        }
+		.slide .cover {
+			width: 100%;
+		}
 
-        .slide .shout {
+		.slide .shout {
 
-        }
+		}
 
-        .slide h2.shout {
-            margin-top: 6px;
-            margin-bottom: 34px;
-            color: var(--color-grey);
-            font: bold 100px/1 'PT Sans Narrow', sans-serif;
-        }
+		.slide h2.shout {
+			margin-top: 6px;
+			margin-bottom: 34px;
+			color: var(--color-grey);
+			font: bold 100px/1 'PT Sans Narrow', sans-serif;
+		}
 
-        .shower h2.shout::after {
-            border: none;
-        }
+		.shower h2.shout::after {
+			border: none;
+		}
 
-        .slide h3.shout {
-            margin-top: 6px;
-            margin-bottom: 34px;
-            color: var(--color-grey);
-            font: bold 70px/1 'PT Sans Narrow', sans-serif;
-        }
+		.slide h3.shout {
+			margin-top: 6px;
+			margin-bottom: 34px;
+			color: var(--color-grey);
+			font: bold 70px/1 'PT Sans Narrow', sans-serif;
+		}
 
-        .slide h4.shout {
-            margin-top: 6px;
-            margin-bottom: 34px;
-            color: var(--color-grey);
-            font: bold 50px/1 'PT Sans Narrow', sans-serif;
-        }
+		.slide h4.shout {
+			margin-top: 6px;
+			margin-bottom: 34px;
+			color: var(--color-grey);
+			font: bold 50px/1 'PT Sans Narrow', sans-serif;
+		}
     </style>
 </head>
 <body class="shower list">
+<!--<section class="slide" id="first">-->
+<!--    <figure>-->
+<!--        <img class="cover" src="pictures/index.png" alt="">-->
+<!--    </figure>-->
+<!--    <style>-->
+<!--		#first {-->
+<!--			color: #ffffff;-->
+<!--			line-height: initial;-->
+<!--		}-->
 
-<section class="slide" id="first">
-    <figure>
-        <img class="cover" src="pictures/index.png" alt="">
-    </figure>
+<!--		#first::after, #first::before {-->
+<!--			display: none;-->
+<!--		}-->
+<!--    </style>-->
+<!--</section>-->
+<section class="slide" id="preview">
+    <div class="lines"></div>
+    <div class="stripes"></div>
+    <h1>DTO на стероидах</h1>
+    <p>Владимир Плахотников</p>
     <style>
-        #first {
-            color: #FFF;
-            line-height: initial;
-        }
+		#preview {
+			color: #fff;
+			line-height: initial;
+			background: url("pictures/background.png") no-repeat center/cover;
+		}
 
-        #first::after, #first::before {
-            display: none;
-        }
+		#preview::before {
+			background-image: url("pictures/logo-white.png");
+		}
+
+		#preview::after {
+			background: url("pictures/yellow-circle.png") 100px 25px/cover no-repeat;
+			width: 570px;
+			height: 350px;
+			padding: 127px 0 0 150px;
+			font: italic bold 220px/1 "Arial", sans-serif;
+			content: '#2';
+		}
+
+		#preview .lines {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 220px;
+			height: 185px;
+			background: url("pictures/first-slide-topleft-corner.png") center/contain no-repeat;
+			transform: scale(1, -1);
+		}
+
+		#preview .stripes {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			width: 80px;
+			height: 140px;
+			background: url("pictures/stripes.png") center/190px no-repeat;
+		}
+
+		#preview h1 {
+			position: relative;
+			top: calc(50% - 40px);
+			transform: translateY(-50%);
+			margin: 0;
+			font: 300 36px/1 "Arial", sans-serif;
+		}
+
+		#preview p {
+			position: absolute;
+			bottom: 0;
+			max-width: 150px;
+			margin: 0 0 60px 0;
+		}
     </style>
 </section>
-
-
 
 <section class="slide">
     <h2>Классика - сервис для метода API</h2>
     <div class="next">
         <pre class="php" style="font-family:monospace; font-size: 20px;"><span
-                style="color: #000000; font-weight: bold;">public</span> <span
-                style="color: #000000; font-weight: bold;">function</span> process<span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$params</span><span
-                style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+            style="color: #000000; font-weight: bold;">public</span> <span
+            style="color: #000000; font-weight: bold;">function</span> process<span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$params</span><span
+            style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
    <span class="next"><span style="color: #000088;">$result</span> <span
-           style="color: #339933;">=</span> OrderProvider<span
-           style="color: #339933;">::</span><span style="color: #004000;">find</span><span
-           style="color: #009900;">&#40;</span><span style="color: #000088;">$params</span><span
-           style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></span>
+       style="color: #339933;">=</span> OrderProvider<span
+       style="color: #339933;">::</span><span style="color: #004000;">find</span><span
+       style="color: #009900;">&#40;</span><span style="color: #000088;">$params</span><span
+       style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></span>
 
    <span class="next"><span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span
-           style="color: #000088;">$params</span><span style="color: #009900;">&#91;</span><span
-           style="color: #0000ff;">'deliveryType'</span><span style="color: #009900;">&#93;</span><span
-           style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+       style="color: #000088;">$params</span><span style="color: #009900;">&#91;</span><span
+       style="color: #0000ff;">'deliveryType'</span><span style="color: #009900;">&#93;</span><span
+       style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
        <span style="color: #000088;">$result</span><span style="color: #009900;">&#91;</span><span
-               style="color: #0000ff;">'type'</span><span style="color: #009900;">&#93;</span> <span
-               style="color: #339933;">=</span> <span style="color: #0000ff;">'manually'</span><span
-               style="color: #339933;">;</span>
+           style="color: #0000ff;">'type'</span><span style="color: #009900;">&#93;</span> <span
+           style="color: #339933;">=</span> <span style="color: #0000ff;">'manually'</span><span
+           style="color: #339933;">;</span>
    <span style="color: #009900;">&#125;</span></span>
    <span class="next" style="color: #666666; font-style: italic;">// бизнес-магия</span>
    <span class="next"><span style="color: #b1b100;">return</span> <span
-           style="color: #000088;">$result</span><span style="color: #339933;">;</span>
+       style="color: #000088;">$result</span><span style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></span>
    </pre>
     </div>
@@ -160,19 +217,19 @@
     <h2>Внедряем DTO в контроллер</h2>
     <div class="next">
         <pre class="php" style="font-family:monospace; font-size: 20px;"><span
-                style="color: #000088;">$input</span> <span
-                style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessInput</mark><span
-                style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
-                style="color: #339933;">;</span>
+            style="color: #000088;">$input</span> <span
+            style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessInput</mark><span
+            style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
+            style="color: #339933;">;</span>
 &nbsp;
 <span style="color: #000088;">$input</span><span style="color: #339933;">-&gt;</span><span
-                    style="color: #004000;">id</span> <span
-                    style="color: #339933;">=</span> Yii<span style="color: #339933;">::</span><span
-                    style="color: #000088;">$app</span><span style="color: #339933;">-&gt;</span><span
-                    style="color: #004000;">request</span><span style="color: #339933;">-&gt;</span><span
-                    style="color: #004000;">get</span><span style="color: #009900;">&#40;</span><span
-                    style="color: #0000ff;">'id'</span><span style="color: #009900;">&#41;</span><span
-                    style="color: #339933;">;</span></pre>
+                style="color: #004000;">id</span> <span
+                style="color: #339933;">=</span> Yii<span style="color: #339933;">::</span><span
+                style="color: #000088;">$app</span><span style="color: #339933;">-&gt;</span><span
+                style="color: #004000;">request</span><span style="color: #339933;">-&gt;</span><span
+                style="color: #004000;">get</span><span style="color: #009900;">&#40;</span><span
+                style="color: #0000ff;">'id'</span><span style="color: #009900;">&#41;</span><span
+                style="color: #339933;">;</span></pre>
     </div>
 
     <div class="next">
@@ -181,9 +238,9 @@
 <span style="color: #666666; font-style: italic;">// присвоение других полей и их валидация</span>
 
 <span style="color: #000088;">$output</span> <span style="color: #339933;">=</span> OrderService<span
-                style="color: #339933;">::</span><span style="color: #004000;">process</span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$input</span><span
-                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+            style="color: #339933;">::</span><span style="color: #004000;">process</span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$input</span><span
+            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
 &nbsp;
 <span style="color: #666666; font-style: italic;">// ... превращаем $output в нужный формат </span></pre>
     </div>
@@ -192,38 +249,38 @@
 <section class="slide">
     <h2>Внедряем DTO в сервис</h2>
     <pre class="php next" style="font-family:monospace;"><span
-            style="color: #000000; font-weight: bold;">public</span> <span
-            style="color: #000000; font-weight: bold;">function</span> process<span style="color: #009900;">&#40;</span><mark>OrderProcessInput</mark> <span
-            style="color: #000088;">$input</span><span style="color: #009900;">&#41;</span> <span
-            style="color: #009900;">&#123;</span>
+        style="color: #000000; font-weight: bold;">public</span> <span
+        style="color: #000000; font-weight: bold;">function</span> process<span style="color: #009900;">&#40;</span><mark>OrderProcessInput</mark> <span
+        style="color: #000088;">$input</span><span style="color: #009900;">&#41;</span> <span
+        style="color: #009900;">&#123;</span>
     </pre>
 
     <pre class="php next" style="font-family:monospace;"><span style="color: #000088;">$result </span><span
-            style="color: #339933;">=</span> OrderProvider<span
-            style="color: #339933;">::</span><span style="color: #004000;">find</span><span
-            style="color: #009900;">&#40;</span><span
-            style="color: #000088;">$input</span><span style="color: #339933;">-&gt;</span><span
-            style="color: #004000;">orderId</span><span style="color: #009900;">&#41;</span><span
-            style="color: #339933;">;</span>
+        style="color: #339933;">=</span> OrderProvider<span
+        style="color: #339933;">::</span><span style="color: #004000;">find</span><span
+        style="color: #009900;">&#40;</span><span
+        style="color: #000088;">$input</span><span style="color: #339933;">-&gt;</span><span
+        style="color: #004000;">orderId</span><span style="color: #009900;">&#41;</span><span
+        style="color: #339933;">;</span>
     </pre>
 
     <pre class="php next" style="font-family:monospace;"><span style="color: #000088;">$output</span> <span
-            style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessOutput</mark><span
-            style="color: #009900;">&#40;</span><span style="color: #009933; font-style: italic;">/** заполняем данными **/</span><span
-            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+        style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessOutput</mark><span
+        style="color: #009900;">&#40;</span><span style="color: #009933; font-style: italic;">/** заполняем данными **/</span><span
+        style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
     </pre>
 
     <pre class="php next" style="font-family:monospace;"><span style="color: #b1b100;">if</span> <span
-            style="color: #009900;">&#40;</span><span style="color: #000088;">$input</span><span
-            style="color: #339933;">-&gt;</span><span style="color: #004000;">deliveryType</span><span
-            style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        style="color: #009900;">&#40;</span><span style="color: #000088;">$input</span><span
+        style="color: #339933;">-&gt;</span><span style="color: #004000;">deliveryType</span><span
+        style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
     <span style="color: #000088;"><mark>$output</mark></span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">type</span> <span
-                style="color: #339933;">=</span> <span style="color: #0000ff;">'manually'</span><span
-                style="color: #339933;">;</span>
+            style="color: #339933;">=</span> <span style="color: #0000ff;">'manually'</span><span
+            style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
 
     <pre class="php next" style="font-family:monospace;"><span style="color: #b1b100;">return</span> <span
-            style="color: #000088;"><mark>$output</mark></span><span style="color: #339933;">;</span></pre>
+        style="color: #000088;"><mark>$output</mark></span><span style="color: #339933;">;</span></pre>
 
 </section>
 
@@ -233,18 +290,18 @@
     <div class="columns three" style="grid-column-gap: 45px;">
         <div class="next">
             <pre class="php" style="font-family:monospace;"><span
-                    style="color: #000000; font-weight: bold;">class</span> ManyFieldsDTO
+                style="color: #000000; font-weight: bold;">class</span> ManyFieldsDTO
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000000; font-weight: bold;">private</span> <span style="color: #000088;">$field1</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">private</span> <span style="color: #000088;">$field2</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #666666; font-style: italic;">// ...</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">private</span> <span style="color: #000088;">$fieldN</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
         </div>
         <div class="next">
@@ -259,28 +316,28 @@
         </div>
         <div class="next">
             <pre class="php" style="font-family:monospace; font-size: 14px;"><span
-                    style="color: #009933; font-style: italic;">/**
+                style="color: #009933; font-style: italic;">/**
  * @return mixed
  */</span>
 <span style="color: #000000; font-weight: bold;">public</span> <span
-                        style="color: #000000; font-weight: bold;">function</span> getField1<span
-                        style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>
+                    style="color: #000000; font-weight: bold;">function</span> getField1<span
+                    style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #b1b100;">return</span> <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span
-                        style="color: #004000;">field1</span><span style="color: #339933;">;</span>
+                    style="color: #004000;">field1</span><span style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span>
 &nbsp;
 <span style="color: #009933; font-style: italic;">/**
  * @param mixed $field1
  */</span>
 <span style="color: #000000; font-weight: bold;">public</span> <span
-                        style="color: #000000; font-weight: bold;">function</span> setField1<span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$field1</span><span
-                        style="color: #009900;">&#41;</span>
+                    style="color: #000000; font-weight: bold;">function</span> setField1<span
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$field1</span><span
+                    style="color: #009900;">&#41;</span>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">field1</span> <span
-                        style="color: #339933;">=</span> <span style="color: #000088;">$field1</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">=</span> <span style="color: #000088;">$field1</span><span
+                    style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
         </div>
     </div>
@@ -325,54 +382,54 @@
     <div class="columns two">
         <div class="next">
         <pre class="php" style="font-family:monospace; font-size: 14px;"><span
-                style="color: #000000; font-weight: bold;">class</span> OrderProcessInput
+            style="color: #000000; font-weight: bold;">class</span> OrderProcessInput
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000088;">$id</span><span
-                    style="color: #339933;">;</span>
+                style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #009933; font-style: italic;">/**
      * @var <mark>Client</mark>
      */</span>
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000088;">$client</span><span
-                    style="color: #339933;">;</span>
+                style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #009933; font-style: italic;">/**
      * @var <mark>Attribute[]</mark>
      */</span>
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000088;">$attributes</span><span
-                    style="color: #339933;">;</span>
+                style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
         </div>
         <div>
             <div class="next">
 <pre class="php" style="font-family:monospace; font-size: 14px;"><span
-        style="color: #000000; font-weight: bold;">class</span> <mark>Client</mark>
+    style="color: #000000; font-weight: bold;">class</span> <mark>Client</mark>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000000; font-weight: bold;">private</span> <span style="color: #000088;">$name</span><span
-            style="color: #339933;">;</span>
+        style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">function</span> getName<span
-            style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span
-            style="color: #009900;">&#123;</span> <span style="color: #b1b100;">return</span> <span
-            style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">name</span><span
-            style="color: #339933;">;</span> <span style="color: #009900;">&#125;</span>
+        style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span
+        style="color: #009900;">&#123;</span> <span style="color: #b1b100;">return</span> <span
+        style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">name</span><span
+        style="color: #339933;">;</span> <span style="color: #009900;">&#125;</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">function</span> setName<span
-            style="color: #009900;">&#40;</span><span style="color: #000088;">$name</span><span style="color: #009900;">&#41;</span> <span
-            style="color: #009900;">&#123;</span> <span style="color: #000088;">$this</span><span
-            style="color: #339933;">-&gt;</span><span style="color: #004000;">name</span> <span style="color: #339933;">=</span> <span
-            style="color: #000088;">$name</span><span style="color: #339933;">;</span> <span style="color: #009900;">&#125;</span>
+        style="color: #009900;">&#40;</span><span style="color: #000088;">$name</span><span style="color: #009900;">&#41;</span> <span
+        style="color: #009900;">&#123;</span> <span style="color: #000088;">$this</span><span
+        style="color: #339933;">-&gt;</span><span style="color: #004000;">name</span> <span style="color: #339933;">=</span> <span
+        style="color: #000088;">$name</span><span style="color: #339933;">;</span> <span style="color: #009900;">&#125;</span>
 <span style="color: #009900;">&#125;</span></pre>
             </div>
             <div class="next">
                 <pre class="php" style="font-family:monospace; font-size: 14px;"><span
-                        style="color: #000000; font-weight: bold;">class</span> <mark>Attribute</mark>
+                    style="color: #000000; font-weight: bold;">class</span> <mark>Attribute</mark>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000088;">$key</span><span
-                            style="color: #339933;">;</span>
+                        style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000088;">$value</span><span
-                            style="color: #339933;">;</span>
+                        style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
             </div>
         </div>
@@ -385,62 +442,62 @@
     <div class="columns two">
         <div class="next">
             <pre class="javascript" style="font-family:monospace;"><span
+                style="color: #009900;">&#123;</span>
+  <span style="color: #33#3366cc&quot;id&quot;</span><span style=" color: #339933;">:</span> <span
+                    style="color: #CC#cc0000123</span><span style=" color: #339933;">,</span>
+                <span style="color: #33#3366cc&quot;client&quot;</span><span style=" color: #339933;">:</span> <span
                     style="color: #009900;">&#123;</span>
-  <span style="color: #3366CC;">&quot;id&quot;</span><span style="color: #339933;">:</span> <span
-                        style="color: #CC0000;">123</span><span style="color: #339933;">,</span>
-  <span style="color: #3366CC;">&quot;client&quot;</span><span style="color: #339933;">:</span> <span
-                        style="color: #009900;">&#123;</span>
-    <span style="color: #3366CC;">&quot;name&quot;</span><span style="color: #339933;">:</span> <span
-                        style="color: #3366CC;">&quot;Skyeng&quot;</span><span style="color: #339933;">,</span>
-    <mark><span style="color: #3366CC;">&quot;unused&quot;</span><span style="color: #339933;">:</span> <span
-            style="color: #3366CC;">&quot;field&quot;</span></mark>
-  <span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span>
-  <span style="color: #3366CC;">&quot;attributes&quot;</span><span style="color: #339933;">:</span> <span
+    <span style="color: #33#3366cc&quot;name&quot;</span><span style=" color: #339933;">:</span> <span
+                    style="color: #33#3366cc&quot;Skyeng&quot;</span><span style=" color: #339933;">,</span>
+                <mark><span style="color: #33#3366cc&quot;unused&quot;</span><span style=" color: #339933;">:</span> <span
+                    style="color: #33#3366cc&quot;field&quot;</span></mark>
+  <span style=" color: #009900;">&#125;</span><span style="color: #339933;">,</span>
+  <span style="color: #33#3366cc&quot;attributes&quot;</span><span style=" color: #339933;">:</span> <span
                         style="color: #009900;">&#91;</span>
     <span style="color: #009900;">&#123;</span>
-      <span style="color: #3366CC;">&quot;key&quot;</span><span style="color: #339933;">:</span> <span
-                        style="color: #3366CC;">&quot;param1&quot;</span><span style="color: #339933;">,</span>
-      <span style="color: #3366CC;">&quot;value&quot;</span><span style="color: #339933;">:</span> <span
-                        style="color: #3366CC;">&quot;value1&quot;</span>
-    <span style="color: #009900;">&#125;</span>
-  <span style="color: #009900;">&#93;</span>
+      <span style="color: #33#3366cc&quot;key&quot;</span><span style=" color: #339933;">:</span> <span
+                        style="color: #33#3366cc&quot;param1&quot;</span><span style=" color: #339933;">,</span>
+                    <span style="color: #33#3366cc&quot;value&quot;</span><span style=" color: #339933;">:</span> <span
+                        style="color: #33#3366cc&quot;value1&quot;</span>
+    <span style=" color: #009900;">&#125;</span>
+                    <span style="color: #009900;">&#93;</span>
 <span style="color: #009900;">&#125;</span></pre>
         </div>
         <div>
             <div class="next">
                 <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$encoders</span> <span
-                        style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
-                        style="color: #000000; font-weight: bold;">new</span> JsonEncoder<span style="color: #009900;">&#40;</span><span
-                        style="color: #009900;">&#41;</span><span style="color: #009900;">&#93;</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
+                    style="color: #000000; font-weight: bold;">new</span> JsonEncoder<span style="color: #009900;">&#40;</span><span
+                    style="color: #009900;">&#41;</span><span style="color: #009900;">&#93;</span><span
+                    style="color: #339933;">;</span>
 <span style="color: #000088;">$normalizers</span> <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
-                            style="color: #000000; font-weight: bold;">new</span> ObjectNormalizer<span
-                            style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
-                            style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+                        style="color: #000000; font-weight: bold;">new</span> ObjectNormalizer<span
+                        style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
+                        style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
 <span style="color: #000088;">$serializer</span> <span style="color: #339933;">=</span> <span
-                            style="color: #000000; font-weight: bold;">new</span> Serializer<span
-                            style="color: #009900;">&#40;</span><span style="color: #000088;">$normalizers</span><span
-                            style="color: #339933;">,</span> <span style="color: #000088;">$encoders</span><span
-                            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+                        style="color: #000000; font-weight: bold;">new</span> Serializer<span
+                        style="color: #009900;">&#40;</span><span style="color: #000088;">$normalizers</span><span
+                        style="color: #339933;">,</span> <span style="color: #000088;">$encoders</span><span
+                        style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
             </div>
             <div class="next">
                 <br/>
                 <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$orderProcessInput</span> <span
-                        style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
-                        style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>deserialize</mark></span><span
-                        style="color: #009900;">&#40;</span>
+                    style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
+                    style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>deserialize</mark></span><span
+                    style="color: #009900;">&#40;</span>
     <span style="color: #000088;">$jsonContent</span><span style="color: #339933;">,</span>
     <mark>OrderProcessInput</mark><span style="color: #339933;">::</span><span
-                            style="color: #000000; font-weight: bold;">class</span><span
-                            style="color: #339933;">,</span>
+                        style="color: #000000; font-weight: bold;">class</span><span
+                        style="color: #339933;">,</span>
     <span style="color: #0000ff;">'json'</span>
 <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
             </div>
             <div class="next">
                 <br/>
                 <pre class="php" style="font-family:monospace;"><span style="color: #990000;">print_r</span><span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                        style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+                    style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
             </div>
         </div>
     </div>
@@ -452,20 +509,20 @@
         <div>
             <div class="next">
                 <pre class="javascript" style="font-family:monospace;"><mark>OrderProcessInput</mark> <span
-                        style="">Object</span>
+                    style="">Object</span>
 <span style="color: #009900;">&#40;</span>
     <span style="color: #009900;">&#91;</span>id<span style="color: #009900;">&#93;</span> <span
-                            style="color: #339933;">=&gt;</span> <span style="color: #CC0000;">123</span></pre>
+                        style="color: #339933;">=&gt;</span> <span style="color: #CC#cc0000123</span></pre>
             </div>
-            <div class="next">
+            <div class=" next">
                 <pre class="javascript" style="font-family:monospace;">&nbsp;
     <span style="color: #009900;">&#91;</span>client<span style="color: #009900;">&#93;</span> <span
-                            style="color: #339933;">=&gt;</span> <mark>Client</mark> <span
-                            style="">Object</span>
+                        style="color: #339933;">=&gt;</span> <mark>Client</mark> <span
+                        style="">Object</span>
         <span style="color: #009900;">&#40;</span>
             <span style="color: #009900;">&#91;</span>name<span style="color: #339933;">:</span>Client<span
-                            style="color: #339933;">:</span>private<span style="color: #009900;">&#93;</span> <span
-                            style="color: #339933;">=&gt;</span> Skyeng
+                        style="color: #339933;">:</span>private<span style="color: #009900;">&#93;</span> <span
+                        style="color: #339933;">=&gt;</span> Skyeng
         <span style="color: #009900;">&#41;</span></pre>
             </div>
         </div>
@@ -473,16 +530,16 @@
             <div class="next">
                 <br/>
                 <pre class="javascript" style="font-family:monospace;">    <span style="color: #009900;">&#91;</span>attributes<span
-                        style="color: #009900;">&#93;</span> <span style="color: #339933;">=&gt;</span> <span style="">Array</span>
+                    style="color: #009900;">&#93;</span> <span style="color: #339933;">=&gt;</span> <span style="">Array</span>
         <span style="color: #009900;">&#40;</span>
-            <span style="color: #009900;">&#91;</span><span style="color: #CC0000;">0</span><span
-                            style="color: #009900;">&#93;</span> <span style="color: #339933;">=&gt;</span> <mark>Attribute</mark> <span
-                            style="">Object</span>
+            <span style="color: #009900;">&#91;</span><span style="color: #CC#cc00000</span><span
+                            style=" color: #009900;">&#93;</span> <span style="color: #339933;">=&gt;</span> <mark>Attribute</mark> <span
+                        style="">Object</span>
                 <span style="color: #009900;">&#40;</span>
                     <span style="color: #009900;">&#91;</span>key<span style="color: #009900;">&#93;</span> <span
-                            style="color: #339933;">=&gt;</span> param1
+                        style="color: #339933;">=&gt;</span> param1
                     <span style="color: #009900;">&#91;</span>value<span style="color: #009900;">&#93;</span> <span
-                            style="color: #339933;">=&gt;</span> value1
+                        style="color: #339933;">=&gt;</span> value1
                 <span style="color: #009900;">&#41;</span>
 &nbsp;
         <span style="color: #009900;">&#41;</span></pre>
@@ -498,38 +555,38 @@
 
     <div class="next">
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$jsonContent</span> <span
-                style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
-                style="color: #339933;">-&gt;</span><span style="color: #990000;"><mark>serialize</mark></span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                style="color: #339933;">,</span> <span style="color: #0000ff;">'json'</span><span
-                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+            style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
+            style="color: #339933;">-&gt;</span><span style="color: #990000;"><mark>serialize</mark></span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+            style="color: #339933;">,</span> <span style="color: #0000ff;">'json'</span><span
+            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
     </div>
     <div class="next">
         <br/>
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$array</span> <span
-                style="color: #339933;">=</span> <span style="color: #990000;">json_decode</span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$jsonContent</span><span
-                style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span><span
-                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+            style="color: #339933;">=</span> <span style="color: #990000;">json_decode</span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$jsonContent</span><span
+            style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">true</span><span
+            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
     </div>
     <div class="next">
         <br/>
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$orderProcessInput</span> <span
-                style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
-                style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>denormalize</mark></span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$array</span><span
-                style="color: #339933;">,</span> OrderProcessInput<span style="color: #339933;">::</span><span
-                style="color: #000000; font-weight: bold;">class</span><span style="color: #009900;">&#41;</span><span
-                style="color: #339933;">;</span></pre>
+            style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
+            style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>denormalize</mark></span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$array</span><span
+            style="color: #339933;">,</span> OrderProcessInput<span style="color: #339933;">::</span><span
+            style="color: #000000; font-weight: bold;">class</span><span style="color: #009900;">&#41;</span><span
+            style="color: #339933;">;</span></pre>
     </div>
 
     <div class="next">
         <br/>
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$array</span> <span
-                style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
-                style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+            style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
+            style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
     </div>
 </section>
 
@@ -537,36 +594,36 @@
     <h2>symfony/serializer - свой нормалайзер</h2>
     <div class="next">
             <pre class="php" style="font-family:monospace;"><span
-                    style="color: #000000; font-weight: bold;">class</span> OrderProcessInputNormalizer <span
-                    style="color: #000000; font-weight: bold;">implements</span> <mark>NormalizerInterface</mark>
+                style="color: #000000; font-weight: bold;">class</span> OrderProcessInputNormalizer <span
+                style="color: #000000; font-weight: bold;">implements</span> <mark>NormalizerInterface</mark>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #000000; font-weight: bold;">private</span> <mark>ObjectNormalizer</mark> <span
-                        style="color: #000088;">$normalizer</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #000088;">$normalizer</span><span
+                    style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #000000; font-weight: bold;">public</span> <span style="color: #000000; font-weight: bold;">function</span> normalize<span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                        style="color: #339933;">,</span> <span style="color: #000088;">$format</span> <span
-                        style="color: #339933;">=</span> <span
-                        style="color: #009900; font-weight: bold;">null</span><span style="color: #009900;">&#41;</span>
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+                    style="color: #339933;">,</span> <span style="color: #000088;">$format</span> <span
+                    style="color: #339933;">=</span> <span
+                    style="color: #009900; font-weight: bold;">null</span><span style="color: #009900;">&#41;</span>
     <span style="color: #009900;">&#123;</span>
         <span style="color: #000088;">$data</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$this</span><span
-                        style="color: #339933;">-&gt;</span><span style="color: #004000;">normalizer</span><span
-                        style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                        style="color: #339933;">,</span> <span style="color: #000088;">$format</span><span
-                        style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+                    style="color: #339933;">-&gt;</span><span style="color: #004000;">normalizer</span><span
+                    style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+                    style="color: #339933;">,</span> <span style="color: #000088;">$format</span><span
+                    style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
 &nbsp;
         <span style="color: #000088;">$data</span><span style="color: #009900;">&#91;</span><span
-                        style="color: #0000ff;">'cached'</span><span style="color: #009900;">&#93;</span> <span
-                        style="color: #339933;">=</span> get_value_from_cache<span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$data</span><span
-                        style="color: #009900;">&#91;</span><span style="color: #0000ff;">'id'</span><span
-                        style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #0000ff;">'cached'</span><span style="color: #009900;">&#93;</span> <span
+                    style="color: #339933;">=</span> get_value_from_cache<span
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$data</span><span
+                    style="color: #009900;">&#91;</span><span style="color: #0000ff;">'id'</span><span
+                    style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span><span
+                    style="color: #339933;">;</span>
 &nbsp;
         <span style="color: #b1b100;">return</span> <span style="color: #000088;">$data</span><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">;</span>
     <span style="color: #009900;">&#125;</span></pre>
     </div>
 </section>
@@ -575,45 +632,45 @@
     <h2>symfony/serializer - свой нормалайзера</h2>
     <div class="next">
             <pre class="php" style="font-family:monospace;"><span
-                    style="color: #000000; font-weight: bold;">public</span> <span
-                    style="color: #000000; font-weight: bold;">function</span> supportsNormalization<span
-                    style="color: #009900;">&#40;</span><span style="color: #000088;">$data</span><span
-                    style="color: #339933;">,</span> <span style="color: #000088;">$format</span> <span
-                    style="color: #339933;">=</span> <span style="color: #009900; font-weight: bold;">null</span><span
-                    style="color: #009900;">&#41;</span>
+                style="color: #000000; font-weight: bold;">public</span> <span
+                style="color: #000000; font-weight: bold;">function</span> supportsNormalization<span
+                style="color: #009900;">&#40;</span><span style="color: #000088;">$data</span><span
+                style="color: #339933;">,</span> <span style="color: #000088;">$format</span> <span
+                style="color: #339933;">=</span> <span style="color: #009900; font-weight: bold;">null</span><span
+                style="color: #009900;">&#41;</span>
 <span style="color: #009900;">&#123;</span>
     <span style="color: #b1b100;">return</span> <span style="color: #000088;">$data</span> instanceof <mark>OrderProcessInput</mark><span
-                        style="color: #339933;">;</span>
+                    style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
     </div>
 
     <div class="next">
         <br/>
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$encoders</span> <span
-                style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
-                style="color: #000000; font-weight: bold;">new</span> JsonEncoder<span
+            style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
+            style="color: #000000; font-weight: bold;">new</span> JsonEncoder<span
+            style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
+            style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
+<span style="color: #000088;">$normalizers</span> <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
+                style="color: #000000; font-weight: bold;">new</span> ObjectNormalizer<span style="color: #009900;">&#40;</span><span
+                style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span
+                style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessInputNormalizer</mark><span
                 style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
                 style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
-<span style="color: #000088;">$normalizers</span> <span style="color: #339933;">=</span> <span style="color: #009900;">&#91;</span><span
-                    style="color: #000000; font-weight: bold;">new</span> ObjectNormalizer<span style="color: #009900;">&#40;</span><span
-                    style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span
-                    style="color: #000000; font-weight: bold;">new</span> <mark>OrderProcessInputNormalizer</mark><span
-                    style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
-                    style="color: #009900;">&#93;</span><span style="color: #339933;">;</span>
 <span style="color: #000088;">$serializer</span> <span style="color: #339933;">=</span> <span
-                    style="color: #000000; font-weight: bold;">new</span> Serializer<span
-                    style="color: #009900;">&#40;</span><span style="color: #000088;">$normalizers</span><span
-                    style="color: #339933;">,</span> <span style="color: #000088;">$encoders</span><span
-                    style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+                style="color: #000000; font-weight: bold;">new</span> Serializer<span
+                style="color: #009900;">&#40;</span><span style="color: #000088;">$normalizers</span><span
+                style="color: #339933;">,</span> <span style="color: #000088;">$encoders</span><span
+                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
     </div>
 
     <div class="next">
         <br/>
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$array</span> <span
-                style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
-                style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
-                style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
-                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+            style="color: #339933;">=</span> <span style="color: #000088;">$serializer</span><span
+            style="color: #339933;">-&gt;</span><span style="color: #004000;"><mark>normalize</mark></span><span
+            style="color: #009900;">&#40;</span><span style="color: #000088;">$orderProcessInput</span><span
+            style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
     </div>
 </section>
 
@@ -651,7 +708,7 @@
      * @<mark>MyCustomAssert</mark>
      */</span>
     <span style="color: #000000; font-weight: bold;">private</span> <span style="color: #000088;">$name</span><span
-                    style="color: #339933;">;</span>
+                style="color: #339933;">;</span>
 &nbsp;
     <span style="color: #666666; font-style: italic;">// ... get/set</span>
 <span style="color: #009900;">&#125;</span></pre>
@@ -664,38 +721,38 @@
     <div class="columns two">
         <div class="next">
         <pre class="php" style="font-family:monospace;"><span style="color: #000088;">$client</span> <span
-                style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> Client<span
-                style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
-                style="color: #339933;">;</span>
+            style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> Client<span
+            style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
+            style="color: #339933;">;</span>
 &nbsp;
 <span style="color: #000088;">$validator</span> <span style="color: #339933;">=</span> Validation<span
-                    style="color: #339933;">::</span><span style="color: #004000;">createValidator</span><span
-                    style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
-                    style="color: #339933;">;</span>
+                style="color: #339933;">::</span><span style="color: #004000;">createValidator</span><span
+                style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span
+                style="color: #339933;">;</span>
 &nbsp;
 <span style="color: #009933; font-style: italic;">/**
 * @var <mark>ConstraintViolationList</mark> $errors
 */</span>
 <span style="color: #000088;">$errors</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$validator</span><span
-                    style="color: #339933;">-&gt;</span><span style="color: #004000;">validate</span><span
-                    style="color: #009900;">&#40;</span><span style="color: #000088;">$client</span><span
-                    style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+                style="color: #339933;">-&gt;</span><span style="color: #004000;">validate</span><span
+                style="color: #009900;">&#40;</span><span style="color: #000088;">$client</span><span
+                style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
         </pre>
         </div>
         <div class="next">
             <pre class="php" style="font-family:monospace;"><span style="color: #b1b100;">if</span> <span
-                    style="color: #009900;">&#40;</span><span style="color: #990000;">count</span><span
-                    style="color: #009900;">&#40;</span><span style="color: #000088;">$errors</span><span
-                    style="color: #009900;">&#41;</span> <span style="color: #339933;">&gt;</span> <span
-                    style="color: #cc66cc;">0</span><span style="color: #009900;">&#41;</span> <span
-                    style="color: #009900;">&#123;</span>
+                style="color: #009900;">&#40;</span><span style="color: #990000;">count</span><span
+                style="color: #009900;">&#40;</span><span style="color: #000088;">$errors</span><span
+                style="color: #009900;">&#41;</span> <span style="color: #339933;">&gt;</span> <span
+                style="color: #cc66cc;">0</span><span style="color: #009900;">&#41;</span> <span
+                style="color: #009900;">&#123;</span>
    <span style="color: #000088;">$errorsString</span> <span style="color: #339933;">=</span> <span
-                        style="color: #009900;">&#40;</span>string<span style="color: #009900;">&#41;</span> <span
-                        style="color: #000088;">$errors</span><span style="color: #339933;">;</span>
+                    style="color: #009900;">&#40;</span>string<span style="color: #009900;">&#41;</span> <span
+                    style="color: #000088;">$errors</span><span style="color: #339933;">;</span>
 &nbsp;
    <span style="color: #b1b100;">throw</span> <span style="color: #000000; font-weight: bold;">new</span> Exception<span
-                        style="color: #009900;">&#40;</span><span style="color: #000088;">$errorsString</span><span
-                        style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+                    style="color: #009900;">&#40;</span><span style="color: #000088;">$errorsString</span><span
+                    style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
 <span style="color: #009900;">&#125;</span></pre>
         </div>
     </div>
