@@ -13,7 +13,7 @@
     grid-auto-rows: calc(
         var(--slide-height) * var(--slide-scale)
     );
-    grid-template-rows: min-content;
+    /*grid-template-rows: min-content;*/
     grid-template-columns: repeat(
         auto-fill,
         calc(var(--slide-width) * var(--slide-scale))
