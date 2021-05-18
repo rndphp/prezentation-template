@@ -10,6 +10,10 @@
     max-height: 100%;
 }
 
+.slide .cover {
+    width: 100%;
+}
+
 /* Fitting */
 
 .cover.w,

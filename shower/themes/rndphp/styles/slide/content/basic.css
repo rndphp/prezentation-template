@@ -4,7 +4,15 @@
     margin-top: 6px;
     margin-bottom: 34px;
     color: var(--color-grey);
-    font: bold 50px/1 'PT Sans Narrow', sans-serif;
+    font: bold 40px/1 'PT Sans Narrow', sans-serif;
+}
+
+.slide h2::after {
+    content: "";
+    height: 10px;
+    display: block;
+    border-bottom: 4px solid #ffe54fff;
+    max-width: 30%;
 }
 
 .slide * + h2 {
