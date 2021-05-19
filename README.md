@@ -1,5 +1,5 @@
 # Shower Presentation Template for RnD PHP
-<img src="pictures/image4.png" width="250" alt="RnD PHP logo">
+<img src="pictures/logo.png" width="250" alt="RnD PHP logo">
 
 
 ## Start
