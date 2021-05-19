@@ -15,9 +15,9 @@
 
 .slide .shout a {
     background-image: linear-gradient(
-        to top,
-        rgba(75, 134, 194, 0.4) 0.06em,
-        transparent 0.06em
+            to top,
+            rgba(75, 134, 194, 0.4) 0.06em,
+            transparent 0.06em
     );
     background-position: bottom 0.13em left 0;
     background-repeat: repeat-x;
@@ -50,4 +50,29 @@
     animation-duration: 0.4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+}
+
+.shower h2.shout {
+    margin-top: 6px;
+    margin-bottom: 34px;
+    color: var(--color-grey);
+    font: bold 100px/1 'PT Sans Narrow', sans-serif;
+}
+
+.shower h2.shout::after {
+    border: none;
+}
+
+.shower h3.shout {
+    margin-top: 6px;
+    margin-bottom: 34px;
+    color: var(--color-grey);
+    font: bold 70px/1 'PT Sans Narrow', sans-serif;
+}
+
+.shower h4.shout {
+    margin-top: 6px;
+    margin-bottom: 34px;
+    color: var(--color-grey);
+    font: bold 50px/1 'PT Sans Narrow', sans-serif;
 }

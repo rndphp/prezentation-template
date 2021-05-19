@@ -35,26 +35,48 @@
     z-index: 0;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 75px var(--slide-side) 0;
+    padding: 40px var(--slide-side) 0;
+    padding-left: 50px;
+    padding-right: 70px;
     width: var(--slide-width);
     height: var(--slide-height);
     background-color: white;
+
 }
 
 /* Number */
 
 .slide::after {
     position: absolute;
-    top: 0;
-    left: 875px;
+    top: auto;
+    left: auto;
     box-sizing: border-box;
-    padding-top: 15px;
-    width: var(--ribbon-size);
-    height: calc(var(--ribbon-size) * 2);
-    background-image: url('ribbon.svg');
+    padding-top: 0;
+    padding-right: 120px;
+    width: 170px;
+    height: 130px;
+    background-image: url('bottom.png');
     background-size: cover;
     color: white;
     counter-increment: slide;
     content: counter(slide);
     text-align: center;
+    bottom: -50px;
+    right: -80px;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 45px;
+    right: 25px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    text-align: center;
+    background-image: url('../../pictures/logo.png');
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

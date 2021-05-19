@@ -14,7 +14,7 @@
     );
     --slide-side: 100px;
 
-    --color-blue: #4b86c2;
+    --color-blue: #3db4dc;
     --color-blue-lighter: #6799cb;
     --color-red: #cc0000;
     --color-yellow: #fafaa2;
@@ -32,5 +32,5 @@
     margin: 0;
     color: black;
     counter-reset: slide;
-    font: 25px/2 'PT Sans', sans-serif;
+    font: 26px/2 'PT Sans', sans-serif;
 }

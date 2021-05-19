@@ -2,9 +2,10 @@
 
 .slide pre {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     counter-reset: code;
-    white-space: normal;
+    white-space: pre;
+    font-size: 16px;
 }
 
 /* Inner */
@@ -12,11 +13,11 @@
 .slide pre code {
     display: block;
     margin-left: calc(
-        var(--slide-side) * -1
+            var(--slide-side) * -1
     );
     padding: 0 0 0 var(--slide-side);
     width: calc(
-        100% + var(--slide-side) * 2
+            100% + var(--slide-side) * 2
     );
     border-radius: 0;
     background-color: transparent;
